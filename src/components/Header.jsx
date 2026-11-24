@@ -25,37 +25,31 @@ export default function Header() {
           <RiMenu3Line />
         </button>
 
-        <Link className="font-light flex items-center gap-2" to={"/"}>
-          F6600P
+        <Link className="font-light flex items-center gap-2 tracking-tighter" to={"/"}>
+          F6600P 
         </Link>
       </div>
-      <nav className="right w-115    hidden md:flex">
-        <ul className="flex items-center gap-5 text-[15px] ">
+      <nav className="right  flex-1 justify-end hidden md:flex">
+        <ul className="flex items-center gap-5 text-[16px] tracking-tighter ">
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-blue-400 underline-offset-8 underline" : ""
-              }
-              to={"/"}
+                className="hover:text-gray-100/90"
+                to={"/"}
             >
               Accueil
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-blue-400 underline-offset-8 underline" : ""
-              }
-              to={"/dashboard"}
+                className="hover:text-gray-100/90"
+                to={"/dashboard"}
             >
               Dashboard
             </NavLink>
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-blue-400 underline-offset-8 underline" : ""
-              }
+              className="hover:text-gray-100/90"
               to={"/students"}
             >
               Étudiants
@@ -63,9 +57,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-blue-400 underline-offset-8 underline" : ""
-              }
+              className="hover:text-gray-100/90"
               to={"/students/add"}
             >
               Ajouter étudiant
@@ -73,10 +65,8 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) =>
-                isActive ? "text-blue-400 underline-offset-8 underline" : ""
-              }
-              to={"/login"}
+                className="hover:text-gray-100/90"
+                to={"/login"}
             >
               Connexion
             </NavLink>

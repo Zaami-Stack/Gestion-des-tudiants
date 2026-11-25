@@ -1,6 +1,5 @@
 import "./Header.css";
 import { RiMenu3Line } from "react-icons/ri";
-import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { HiAcademicCap } from "react-icons/hi2";

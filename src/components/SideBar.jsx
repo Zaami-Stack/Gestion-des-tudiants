@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { HiAcademicCap } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
-export default function SideBar() {
+export default function SideBar({isActive, SetIsActive}) {
+    function clickHandle() {
+    SetIsActive(!isActive);
+  }
   return (
     <nav
       className="fixed md:hidden flex top-0 bottom-0 left-0
@@ -15,7 +18,7 @@ export default function SideBar() {
           </p>
         </div>
         <div className="flex-1 flex justify-end ">
-          <button>
+          <button className=" cursor-pointer" onClick={clickHandle}>
             <IoClose />
           </button>
         </div>

@@ -79,10 +79,10 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              className="hover:text-gray-100/90 whitespace-nowrap shrink-0"
+              className="hover:text-gray-100/90 text-red-400 whitespace-nowrap shrink-0"
               to={"/login"}
             >
-              Connexion
+              Déconnecter
             </NavLink>
           </li>
         </ul>

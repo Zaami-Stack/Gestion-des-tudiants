@@ -1,6 +1,5 @@
 import "./Header.css";
 import { RiMenu3Line } from "react-icons/ri";
-import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { HiAcademicCap } from "react-icons/hi2";
@@ -28,10 +27,10 @@ export default function Header({isActive, SetIsActive}) {
         </button>
 
         <Link
-          className="font-light flex items-center gap-2 tracking-tighter"
+          className="text-[21px] font-light flex items-center gap-2 tracking-tighter"
           to={"/"}
         >
-          <HiAcademicCap className="mb-1" />
+          <HiAcademicCap className="mb-1 " />
           <span className="text-[#00BCFF]"><span className="text-white">Edu</span>Flow</span>
         </Link>
       </div>

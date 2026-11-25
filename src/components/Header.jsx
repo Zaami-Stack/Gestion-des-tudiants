@@ -3,6 +3,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
+import { HiAcademicCap } from "react-icons/hi2";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ export default function Header() {
           className="font-light flex items-center gap-2 tracking-tighter"
           to={"/"}
         >
+          <HiAcademicCap className="mb-1" />
           EduFlow
         </Link>
       </div>
@@ -45,7 +47,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              className="hover:text-gray-100/90 whitespace-nowrap shrink-0"
+              className={"hover:text-gray-100/90 whitespace-nowrap shrink-0"}
               to={"/"}
             >
               Accueil

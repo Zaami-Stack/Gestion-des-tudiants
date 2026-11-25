@@ -80,7 +80,7 @@ export default function Header({isActive, SetIsActive}) {
           </li>
           <li>
             <NavLink
-              className="hover:text-gray-100/90 text-pink-400 whitespace-nowrap shrink-0"
+              className="hover:text-pink-500 text-pink-400 whitespace-nowrap shrink-0"
               to={"/login"}
             >
               Déconnecter 

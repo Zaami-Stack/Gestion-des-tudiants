@@ -32,7 +32,11 @@ export default function Header({isActive, SetIsActive}) {
           to={"/"}
         >
           <HiAcademicCap className="mb-1" />
+<<<<<<< HEAD
           EduFlow
+=======
+          <span className="text-[#00BCFF]"><span className="text-white">Edu</span>Flow</span>
+>>>>>>> parent of 3aaff9f (fix: adjust link styling in Header component for improved aesthetics)
         </Link>
       </div>
       <nav className="right  flex-1 justify-end hidden md:flex">

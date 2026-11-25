@@ -32,17 +32,18 @@ export default function Header({isActive, SetIsActive}) {
           to={"/"}
         >
           <HiAcademicCap className="mb-1" />
-          EduFlow
+          <span className="text-[#00BCFF]"><span className="text-white">Edu</span>Flow</span>
         </Link>
       </div>
       <nav className="right  flex-1 justify-end hidden md:flex">
         <ul className="flex items-center gap-5 text-[16px] tracking-tighter ">
           <li className=" relative">
-            <IoIosSearch className=" absolute top-1 left-23" />
+            <IoIosSearch color="gray" className=" absolute top-1 left-23 mt-px" />
             <input
               type="text"
               disabled
-              className="bg-[#10141E] rounded-2xl ps-3 w-30"
+              placeholder="Ctrl K"
+              className="header-input bg-[#10141E] rounded-2xl ps-3 w-30 border border-[#18223e]"
             />
           </li>
           <li>
@@ -79,7 +80,7 @@ export default function Header({isActive, SetIsActive}) {
           </li>
           <li>
             <NavLink
-              className="hover:text-gray-100/90 text-red-400 whitespace-nowrap shrink-0"
+              className="hover:text-gray-100/90 text-pink-400 whitespace-nowrap shrink-0"
               to={"/login"}
             >
               Déconnecter 

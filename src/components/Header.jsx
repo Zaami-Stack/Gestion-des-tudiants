@@ -1,6 +1,5 @@
 import "./Header.css";
 import { RiMenu3Line } from "react-icons/ri";
-import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { HiAcademicCap } from "react-icons/hi2";
@@ -32,21 +31,18 @@ export default function Header({isActive, SetIsActive}) {
           to={"/"}
         >
           <HiAcademicCap className="mb-1" />
-<<<<<<< HEAD
-          EduFlow
-=======
           <span className="text-[#00BCFF]"><span className="text-white">Edu</span>Flow</span>
->>>>>>> parent of 3aaff9f (fix: adjust link styling in Header component for improved aesthetics)
         </Link>
       </div>
       <nav className="right  flex-1 justify-end hidden md:flex">
         <ul className="flex items-center gap-5 text-[16px] tracking-tighter ">
           <li className=" relative">
-            <IoIosSearch className=" absolute top-1 left-23" />
+            <IoIosSearch color="gray" className=" absolute top-1 left-23 mt-px" />
             <input
               type="text"
               disabled
-              className="bg-[#10141E] rounded-2xl ps-3 w-30"
+              placeholder="Ctrl K"
+              className="header-input bg-[#10141E] rounded-2xl ps-3 w-30 border border-[#18223e]"
             />
           </li>
           <li>

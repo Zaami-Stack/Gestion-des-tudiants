@@ -14,7 +14,7 @@ export default function SideBar({isActive, SetIsActive}) {
         <div className=" flex flex-1">
           <p className="flex items-center gap-1">
             <HiAcademicCap />
-            EduFlow
+            <span>Edu<span>Flow</span></span>
           </p>
         </div>
         <div className="flex-1 flex justify-end ">
@@ -23,11 +23,11 @@ export default function SideBar({isActive, SetIsActive}) {
           </button>
         </div>
       </div>
-      <NavLink className="">Accueil</NavLink>
-      <NavLink className="">Dashboard</NavLink>
-      <NavLink className="">Étudiants</NavLink>
-      <NavLink>Ajouter étudiant</NavLink>
-      <NavLink>Deconnecter</NavLink>
+      <NavLink className="" to="/">Accueil</NavLink>
+      <NavLink className="" to="/dashboard">Dashboard</NavLink>
+      <NavLink className="" to="/students">Étudiants</NavLink>
+      <NavLink to="/students/add">Ajouter étudiant</NavLink>
+      <NavLink to="/login">Deconnecter</NavLink>
     </nav>
   );
 }

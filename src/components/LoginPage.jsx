@@ -4,6 +4,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 export default function LoginPage() {
   return (
     <main className="relative grid min-h-screen grid-cols-[34px_minmax(0,430px)_34px] justify-center text-white tracking-tighter max-[520px]:grid-cols-[20px_minmax(0,1fr)_20px]">
+      <title>Se connecter</title>
       <div
         className="border-x border-slate-400/10 bg-[repeating-linear-gradient(135deg,transparent_0,transparent_4px,rgb(148_163_184_/_12%)_4px,rgb(148_163_184_/_12%)_5px)]"
         aria-hidden="true"
@@ -41,7 +42,7 @@ export default function LoginPage() {
             />
 
             <input
-              className="my-9 text-[14px] hover:bg-gray-800 h-8 w-full cursor-pointer rounded-2xl bg-[#364153]"
+              className="my-9 text-[14px] border border-[#575e6d] hover:bg-gray-800 h-8 w-full cursor-pointer rounded-2xl bg-[#364153]"
               type="submit"
               value="Se connecter"
             />

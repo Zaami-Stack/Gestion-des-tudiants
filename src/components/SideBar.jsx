@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { HiAcademicCap } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 export default function SideBar({isActive, SetIsActive}) {
-    function clickHandle() {
+  function clickHandle() {
     SetIsActive(!isActive);
   }
   return (
@@ -23,6 +23,7 @@ export default function SideBar({isActive, SetIsActive}) {
           </button>
         </div>
       </div>
+      <NavLink className="">Accueil</NavLink>
       <NavLink className="">Dashboard</NavLink>
       <NavLink className="">Étudiants</NavLink>
       <NavLink>Ajouter étudiant</NavLink>

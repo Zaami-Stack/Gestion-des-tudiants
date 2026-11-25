@@ -27,7 +27,7 @@ export default function SideBar({isActive, SetIsActive}) {
       <NavLink className="">Dashboard</NavLink>
       <NavLink className="">Étudiants</NavLink>
       <NavLink>Ajouter étudiant</NavLink>
-      <NavLink>Connexion</NavLink>
+      <NavLink>Deconnecter</NavLink>
     </nav>
   );
 }

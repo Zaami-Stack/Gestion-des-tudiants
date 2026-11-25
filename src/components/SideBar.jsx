@@ -1,0 +1,32 @@
+import { NavLink } from "react-router-dom";
+import { HiAcademicCap } from "react-icons/hi2";
+import { IoClose } from "react-icons/io5";
+export default function SideBar({isActive, SetIsActive}) {
+    function clickHandle() {
+    SetIsActive(!isActive);
+  }
+  return (
+    <nav
+      className="fixed md:hidden flex top-0 bottom-0 left-0
+       bg-[#030712] w-full flex-col gap-8 text-white ps-6 font-light tracking-tighter text-xl"
+    >
+      <div className="flex  items-center mt-5 me-5 mb-10 ">
+        <div className=" flex flex-1">
+          <p className="flex items-center gap-1">
+            <HiAcademicCap />
+            EduFlow
+          </p>
+        </div>
+        <div className="flex-1 flex justify-end ">
+          <button className=" cursor-pointer" onClick={clickHandle}>
+            <IoClose />
+          </button>
+        </div>
+      </div>
+      <NavLink className="">Dashboard</NavLink>
+      <NavLink className="">Étudiants</NavLink>
+      <NavLink>Ajouter étudiant</NavLink>
+      <NavLink>Connexion</NavLink>
+    </nav>
+  );
+}

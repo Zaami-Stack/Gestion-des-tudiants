@@ -5,11 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { HiAcademicCap } from "react-icons/hi2";
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Header({isActive, SetIsActive}) {
+
 
   function clickHandle() {
-    setIsOpen(!isOpen);
+    SetIsActive(!isActive);
   }
   return (
     <header

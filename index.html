@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <meta name="theme-color" content="#f5f6f8" />
+    <meta name="description" content="EduFlow — Portail de gestion des étudiants." />
+    <script>
+      try {
+        const saved = localStorage.getItem("eduflow-theme");
+        const dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      } catch {}
+    </script>
+    <title>EduFlow · Gestion des étudiants</title>
   </head>
   <body>
     <div id="root"></div>

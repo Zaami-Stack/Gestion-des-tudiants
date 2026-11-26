@@ -1,19 +1,11 @@
-@font-face {
-  font-family: "SF Pro";
-  src: url("./assets/fonts/SF-Pro-Display-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+.font-display {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-* {
-  font-family: "SF Pro", sans-serif;
-}
-
-body {
-  background-color: #030712;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
+.brand-mark {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
